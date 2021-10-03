@@ -1,0 +1,88 @@
+<!--
+/*
+File name:project.ejs
+Student name: Gagandeep kaur
+Student id: 301144458
+Date: 03-10-2021
+*/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include ('./partials/header') %>
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <%- include ('./partials/navmenu') %>
+
+  <!--Project Grid Section-->
+  <section class="portfolio mt-5" id="portfolio">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">
+        Project
+      </h2>
+      <hr class="star-dark mb-5" />
+      <div class="row">
+        <!--Movie Finder-->
+        <div class="col-12">
+
+          <a class="portfolio-item d-block mx-auto" href="#">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <p style="font-size: 40px;font-weight: 600;font-family: cursive;">
+                 Chat System (java based)
+                </p>
+              </div>
+            </div>
+            <div class="custom_img">
+              <img class="img-fluid" src="public/Assests/images/chatsystem.png" alt="Movie Finder" />
+            </div>
+          </a>
+          <div class="description">
+            <h3>Chat System (java based)</h3>
+           
+            <p>
+              It uses TCP socket communication. It consists of two parts: jClient (client application) and jServer (server application). 
+              If both are running in same machine then the address to be given to jClient is local host address and if both are running on different machines then address to be provided to jClient is the ip address of machine in which jServer is running.
+            </p>
+          </div>
+        </div>
+        <!--Movie Finder-->
+        <div class="col-12">
+          <a class="portfolio-item d-block mx-auto" href="#">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <p style="font-size: 40px;font-weight: 600;font-family: cursive;">
+                 	Mobile Value Added Services - SMS & IVR
+                </p>
+              </div>
+            </div>
+            <div class="custom_img">
+              <img class="img-fluid" src="public/Assests/images/mobilevalue.jpg" alt="Movie Finder" />
+            </div>
+          </a>
+
+
+          <div class="description">
+            <h3> Mobile Value Added Services - SMS & IVR</h3>
+            <p>
+            To process and deliver SMS based value services SMSC platform is used by the telecom service providers and IVR acts as an automated telephony system that interacts with callers, gather information and route calls to the appropriate recipients.
+
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <!--Footer-->
+  <%- include ('./partials/footer') %>
+</body>
+
+</html>

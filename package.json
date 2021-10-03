@@ -1,6 +1,6 @@
 {
-  "name": "myportfoliowebsite",
-  "version": "0.0.0",
+  "name": "assignment1",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
@@ -20,10 +20,17 @@
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
-
-  "description": "assignment 1",
+  "description": "myportfoliowebsite",
+  "main": "app.js",
   "devDependencies": {},
-
-"author": "Gagandeep Kaur",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gagandeep26/My-Portfolio.git"
+  },
+  "author": "Gagandeep Kaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gagandeep26/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Gagandeep26/My-Portfolio#readme"
 }

@@ -7,28 +7,16 @@ Date: 03-10-2021
 */
 
 -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <%- include ('./partials/header') %>
-</head>
-<body id="page-top">
-    <!--Navigation -->
-    <%- include ('./partials/navmenu') %>
-     
-    <!--Projects-->
-    <section class="portfolio mt-5" id="portfolio">
-    <div class ="container">
-    <h2 class ="text-center text-uppercase text-secondary mb-0">Services</h2>
-    <hr class="star-dark mb-5"/>
-    <div class = "row">
 
+<%- include partials/header.ejs %> 
 
-    <!--Movie Finder -->
+ <%- include partials/main_nav.ejs %> 
+  <!--Main Content-->
+  <main>
 
 <div class ="col-12">
 <div class ="text-center">
-<img class ="width = 50%" src ="public/Assests/images/web-application-development-process.png"  alt="Movie Finder"/>
+<img class ="width = 50%" src ="/Assests/images/web-application-development-process.png" />
 </div>
 <div class ="description">
 <h3> Web application Development </h3>
@@ -39,11 +27,11 @@ We offer a wide range of web applications consulting services. It includes creat
 </div>
 </div>
 
- <!--Movie Finder -->
+ 
 
 <div class ="col-12">
 <div class ="text-center">
-<img class ="width = 50%" src ="public/img/Assests/images/desktop dvelopment.png"  alt="Movie Finder"/>
+<img class ="width = 50%" src ="/Assests/images/desktop dvelopment.png" />
 </div>
 <div class ="description">
 <h3> Desktop application Development </h3>
@@ -54,11 +42,10 @@ We offer a wide range of web applications consulting services. It includes creat
 </div>
 </div>
 
- <!--Movie Finder -->
-
+ 
 <div class ="col-12">
 <div class ="text-center">
-<img class ="width = 50%" src ="public/Assests/images/mobile.png"  alt="Movie Finder"/>
+<img class ="width = 50%" src ="/Assests/images/mobile.png"/>
 </div>
 <div class ="description">
 <h3> Mobile application Development </h3>
@@ -71,13 +58,8 @@ we offer services which includes end-to-end development of mobile applications.U
 
 </div>
 </div>
-
-</section>
-
-<!--footer-->
-
-<%- include  ('./partials/footer') %>
-</body>
-</html>
-
+</main>
+<%- include partials/bottom_nav %> 
+ <%- include partials/footer.ejs %> 
+   
 

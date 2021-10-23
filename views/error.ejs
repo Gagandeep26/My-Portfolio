@@ -7,30 +7,17 @@ Date: 03-10-2021
 */
 
 -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <%- include ('./partials/header') %>
+<%- include partials/header.ejs %>
 
-</head>
-<body id="page-top">
-    <!--Navigation -->
-    <%- include ('./partials/navmenu') %>
-    <section id="contact ">
-        <div class="container">
-          <div class="error_container">
-            <h2 class="text-center text-uppercase text-danger mt-5 mb-0">
-              Error !
-            </h2>
-            <button onclick="window.history.back()" class="btn btn-secondary btn-sm">Go Back</button>
-          </div>
-        </div>
-      </section>
-    
-      <!--Footer-->
-      <%- include ('./partials/footer') %>
+<%- include partials/main_nav.ejs %>
 
-    
-</body>
-</html>
+<div class="container">
+    <h1><%= message %></h1>
+    <h2><%= error.status %></h2>
+    <pre><%= error.stack %></pre>
+</div>
 
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

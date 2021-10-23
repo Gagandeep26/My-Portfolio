@@ -8,51 +8,34 @@ Date: 03-10-2021
 
 -->
 
-<!DOCTYPE html>
-<html lang="en">
+<%- include partials/header.ejs %> 
 
-<head>
-  <%- include ('./partials/header') %>
-</head>
-
-<body id="page-top">
-  <!-- Navigation-->
-  <%- include ('./partials/navmenu') %>
-
-  <header class="masthead bg-primary text-white text-center">
-    <div class="container">
-      
-      <h2 class="text-center text-uppercase text-white">About Me</h2>
-      <hr class="star-light mb-5" />
-      <span style="font-size: 120px;"> </span>
-      <div class="text-center">
-        <div style="width: 350px; margin-bottom: 70px; display: inline-block">
-          <img class="img-fluid" src="public/Assests/images/me.jpg" alt="avatar" />
-        </div>
-      </div>
-      <h1 class=" mb-0">Gagandeep Kaur</h1>
-    </div>
-  </header>
-  <!--About Section-->
-  <section class="bg-primary text-white mb-0" id="About">
-    <div class="container">
-      <div class="row">
-        <div class="ml-auto">
-          <p class="lead">
-           My name is Gagandeep Kaur. Currently, I am a student. I am pursuing a Software Engineering Course at Centennial College.
-           I love to learn about new technologies.
-          </p>
-        </div>
-      </div>
-      <div class="text-center">
-        <a target="_blank" rel="noopener noreferrer" href="/resume" class="btn btn-secondary mt-5">My Resume</a>
-      </div>
-    </div>
-  </section>
+ <%- include partials/main_nav.ejs %> 
+  <!--Main Content-->
+  <main>
+  <div class="p-5 text-center bg-light">
+    <h3><%=title %> Page</h3>
+    <p><strong>Gagandeep Kaur</strong></p>
+    <ul class="list-unstyled">
+    <li>  My name is Gagandeep Kaur. Currently, I am a student. I am pursuing a Software Engineering Course at Centennial College.
+           I love to learn about new technologies.</li>
+  <li><a class="btn btn-link" href="/Assests/images/Gaganresumecentennial 1.pdf" role="Button">Resume</a></li>
+</ul>
+    <img src="/Assests/images/me.jpg" class="img-rounded" alt="Photo" style="width:30%">
+    
+  </div>
+  </main>
+  <%- include partials/bottom_nav %> 
+ <%- include partials/footer.ejs %> 
+   
 
 
-  <!--Footer-->
-  <%- include ('./partials/footer') %>
-</body>
 
-</html>
+
+
+
+
+
+
+
+

@@ -43,35 +43,10 @@ app.use(function(err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // rendering all pages
+  // rendering error pages
 
-  app.get('/', function(req, res) {
-    res.render('views/index');
-  });
-
-  app.get('/about',function (req, res)  {
-    res.render('views/about');
-  });
-
-  app.get('/resume', function(req, res)  {
-    res.render('views/resume');
-  });
-
-  app.get('/project',function (req, res)  {
-    res.render('views/project');
-  });
-
-  app.get('/services', function(req, res)  {
-    res.render('views/services');
-  });
-
-  app.get('/contact',function (req, res)  {
-    res.render('views/contact');
-  });
-
-  app.get('/error',function (req, res)  {
-    res.render('views/error');
+  res.status(err.status || 500);
+  res.render('error');
   
-});
 });
 module.exports = app;
